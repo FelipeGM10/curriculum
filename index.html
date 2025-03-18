@@ -2,45 +2,150 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Mi Currículum: Felipe González">
+    <meta name="description" content="Mi Currículum: Felipe González.">
     <meta name="keywords" content="CV, Currículum, Diseño Web">
     <meta name="author" content="Felipe González">
     <meta name="viewport" content="interactive-widget=resizes-content, initial-scale=1.0">
     <title>Mi Currículum</title>
+    <script src="https://kit.fontawesome.com/29591f771e.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        header h1 {
+            font-size: 40px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 19px;
+            color: #666;
+        }
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 30px;
+            width: 100%;
+            max-width: 1000px;
+            margin-bottom: 30px;
+        }
+        .sidebar {
+            background-color: #363636;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar h3 {
+            margin-top: 0;
+            font-size: 22.5px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin: 10px 0;
+            font-size: 17.5px;
+        }
+        .main-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .main-content h2 {
+            color: #2D2D2D;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .main-content p {
+            font-size: 17.5px;
+            line-height: 1.6;
+        }
+        .main-content ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        footer {
+            text-align: center;
+            font-size: 16px;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+        .imagen {
+            
+            text-align: center;
+            background-position: center;
+            border-radius: 50%;
+            padding: 2px;
+
+        }
+        .imagen:hover {
+            transform: scale(1.1);
+        }
+        
+        .imagcontent {
+            text-align: center;
+        }
+
+    </style>
 </head>
 <body>
 
-    <div >
+    <div class="container">
         <header>
             <h1>Felipe de Jesús González Meza</h1>
             <p>Ingeniero Físico | Analista de Sistemas | Desarrollador Web</p>
         </header>
 
-        <div>
-            <div>
-                <img src="Foto_FJGM.jpg" alt="Foto de Perfil" width="50">
-                <h3>Información Personal</h3>
+        <div class="content">
+            <div class="sidebar">
+                <div class="imagcontent">
+                <img class="imagen" src="./Images/Foto_FJGM.jpg" alt="Foto de Perfil" width="100"></div>
+                <br><br>
+                <i class="fa-solid fa-id-card"></i><h3>Información Personal</h3>
                 <ul>
-                    <li><a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=ee272b19-4411-433f-8f28-5c13cb6fd407&redirect_uri=https%3A%2F%2Fsupport.microsoft.com%2Fsignin-oidc&response_type=code%20id_token&scope=openid%20profile%20offline_access&response_mode=form_post&nonce=638774138289131556.OGRjZDg4NmQtMDcxMy00N2Q0LWI2OTMtNzRlZDZmZDE3ZjAzMTBjYTdhNGYtNDMxNy00MjU0LWI5OGMtOTZkNGU4YjQyZjFi&nopa=2&state=CfDJ8EtdG32FO4NGh0T1bTLSXPRo-yPe-pci8zDjoC11EvBBc5QNPM7iAI3XCiaopVBUcdJxlOnUFeOJdpaO2C85zZMZguGbQQeNxDicYqpvAnpyfZ758j0hd0iMCqauciBWCktrFQ09ssrgl9dujy-YcHhmMOPAxnxyWGvXziYZTzDiXQrpJLCxwMUWrZWSi95_it-253v3p6lCNI01TyJaU0dsZTn5-7BgsRak439nWpFPrvTGGYEXddvM7pT9YJ-GTvMwYfu_ay6EnDiG1gHiVEonvj8We2oeN5QLQp4Mji0reHiqO4MJXT-IheV4tszd9L1o2U11UhoF716vZ4hPleM7XKewyLRWn5QbwbMd-UizTfUp8bA8zGOQOQcDPcZt8L5GmdnzJkSlgYEsuqIzOcUz4AzFwQGVusUL2wd_QiqbqhGhg9rHIjSlQb85BlBiJw&x-client-SKU=ID_NET6_0&x-client-ver=8.3.0.0" target="_blank">
-                        <img src="post-30.png" alt="Correo Electrónico" width="15"></a> fel_glzmz@hotmail.com</li>
-                    <li><a href="https://play.google.com/store/apps/details?id=com.google.android.dialer&hl=es_MX&pli=1" target="_blank">
-                        <img src="teléfono-30.png" alt="Teléfono" width="15"></a> (55) 6617-4184</li>
-                    <li><a href="https://www.google.com/maps/place/Ciudad+de+M%C3%A9xico,+CDMX/data=!4m2!3m1!1s0x85ce0026db097507:0x54061076265ee841?sa=X&ved=1t:242&ictx=111" target="_blank">
-                        <img src="marcador-30.png" alt="Ubicación" width="15"></a>  Ciudad de México, México</li>
-                    <li><a href="https://www.linkedin.com/login/es?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin" target="_blank">
-                        <img src="linkedin-30.png" alt="linkedin" width="15"></a> linkedin.com/in/felipejgonzalezm</li>
-                    <li><a href="https://github.com/login" target="_blank">
-                        <img src="github-30.png" alt="GitHub" width="15"></a> github.com/FelipeGM10</li>
+                    <li><a href="mailto:fel_gzlmz@hotmail.com" target="_blank" style="text-decoration: none; color: gainsboro;">
+                        <img src="./Images/post-30.png" alt="Correo Electrónico" width="15"> fel_glzmz@hotmail.com</a></li>
+                    <li><a href="tel: 5566174184" target="_blank" style="text-decoration: none; color: gainsboro;">
+                        <img src="./Images/teléfono-30.png" alt="Teléfono" width="15"> (55) 6617-4184</a></li>
+                    <li><a href="https://wa.me/5566174184" target="_blank" style="text-decoration: none; color: gainsboro;"> 
+                            <img src="./Images/whatsapp-30.png" alt="Teléfono" width="15"> (55) 6617-4184</a></li>
+                    <li><a href="https://www.google.com/maps/place/Ciudad+de+M%C3%A9xico,+CDMX/data=!4m2!3m1!1s0x85ce0026db097507:0x54061076265ee841?sa=X&ved=1t:242&ictx=111" target="_blank" style="text-decoration: none; color: gainsboro;">
+                        <img src="./Images/marcador-30.png" alt="Ubicación" width="15">  Ciudad de México, México</a></li>
+                    <li><a href="https://www.linkedin.com/login/es?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin" target="_blank" style="text-decoration: none; color: gainsboro;">
+                        <img src="./Images/linkedin-30.png" alt="linkedin" width="15"> linkedin.com/in/felipejgonzalezm</a></li>
+                    <li><a href="https://github.com/login" target="_blank" style="text-decoration: none; color: gainsboro;">
+                        <img src="./Images/github-30.png" alt="GitHub" width="15"> github.com/FelipeGM10</a></li>
                 </ul>
             </div>
 
-            <div>
-                <section>
+            <div class="main-content">
+                <section id="resumen">
+                    <i class="fa-solid fa-user-tie" style="text-shadow:2px 2px 4px #000000;"></i>
                     <h2>Resumen Profesional</h2>
                     <p>Ingeniero Físico con experiencia en análisis de sistemas, desarrollo de software y gestión de proyectos. Especializado en metodologías ágiles (SCRUM, Kanban) y herramientas como React.js, Azure DevOps y Jira. Sólida capacidad en el diseño, documentación y validación de procesos y requerimientos, garantizando implementaciones exitosas de sistemas ERP. Experto en programación (Java, Python, C++) y enfocado en la mejora continua y la entrega de soluciones tecnológicas de alta calidad. Destacado por mi liderazgo en roles multifuncionales y en la dirección de equipos en entornos dinámicos. Además, con una destacada trayectoria como violinista profesional, demostrando versatilidad, compromiso y habilidad para equilibrar múltiples disciplinas.</p>
                 </section>
 
-                <section>
+                <section id="educacion">
+                    <i class="fa-solid fa-graduation-cap" style="text-shadow:2px 2px 4px #000000;"></i>
                     <h2>Educación</h2>
                     <ul>
                         <li><strong>Licenciatura en Ingeniería Física</strong> - UNIVERSIDAD IBEROAMERICANA    CIUDAD DE MÉXICO (2014-2019)</li>
@@ -48,7 +153,8 @@
                     </ul>
                 </section>
 
-                <section>
+                <section id="experiencia">
+                    <i class="fa-solid fa-briefcase" style="text-shadow:2px 2px 4px #000000;"></i>
                     <h2>Experiencia Laboral</h2>
                     <ul>
                         <li>
@@ -61,6 +167,7 @@
                                 <li>Levantamiento de requerimientos funcionales y creación de la documentación asociada, incluyendo la redacción de beneficios, objetivos y descripciones detalladas. Diseño y documentación de casos de uso, reglas de negocio, supuestos, condiciones, diagramas UML, prototipos y matrices de prueba, garantizando la correcta especificación de los requerimientos y su implementación efectiva en el sistema</li>
                             </ul>
                         </li>
+                        <br>
                         <li>
                             <strong>Tester y documentador de desarrollo / Programador Jr.</strong> - <em>INFOTEC - CONAGUA</em> (2022-2024)
                             <ul>
@@ -70,6 +177,7 @@
                                 <li>Poner en orden, al día y mantener la documentación de desarrollo, aumentando la eficiencia, eficacia y calidad de los entregables en un 70%</li>
                             </ul>
                         </li>
+                        <br>
                         <li>
                             <strong>Primer violín, Sección de Cuerdas</strong> - <em>MARIACHI “Azteca de Oro”</em> (2012-presente)
                             <ul>
@@ -78,6 +186,7 @@
                                 <li>Asesorar y apoyar con el desempeño en el violín de los miembros del grupo con base a ejercicios y mi experiencia con el instrumento para mejorar el conjunto de habilidades</li>
                             </ul>
                         </li>
+                        <br>
                         <li>
                             <strong>Solista Violín</strong> - <em>UN RATO PARA IMAGINAR</em> (2011-2014)
                             <ul>
@@ -91,7 +200,8 @@
                     </ul>
                 </section>
 
-                <section>
+                <section id="habilidades">
+                    <i class="fa-solid fa-gears" style="text-shadow:2px 2px 4px #000000;"></i>
                     <h2>Habilidades Técnicas</h2>
                     <ul>
                         <li>Desarrollo Frontend: HTML, React</li>
@@ -99,6 +209,7 @@
                         <li>Metodologías ágiles: Scrum, Kanban</li>
                         <li>DBMS: MySQL, Microsoft SQL Server</li>
                     </ul>
+                    <i class="fa-solid fa-people-arrows" style="text-shadow:2px 2px 4px #000000;"></i>
                     <h2>Habilidades Blandas</h2>
                     <ul>
                         <li>Adaptabildad</li>
@@ -106,11 +217,12 @@
                         <li>Trabajo en equipo</li>
                         <li>Gestión de Tiempo</li>
                         <li>Comunicación Efectiva</li>
-                        <li>liderazgo</li>
+                        <li>Liderazgo</li>
                     </ul>
                 </section>
 
-                <section>
+                <section id="premios-certificaciones">
+                    <i class="fa-solid fa-file-certificate" style="text-shadow:2px 2px 4px #000000;"></i>
                     <h2>Premios y Certificaciones</h2>
                     <ul>
                         <li><strong>DEVOPS INTRODUCTION COURSE</strong> - Platzi (2023)</li>
@@ -118,8 +230,9 @@
                     </ul>
                 </section>
 
-                <section>
-                    <a href="pasatiempos.html" target="_blank" style="text-decoration: none"><h2>Pasatiempos</h2></a>
+                <section id="pasatiempos">
+                    <i class="fa-solid fa-dumbbell" style="text-shadow:2px 2px 4px #000000;"></i>
+                    <a href="pasatiempos.html" target="_blank" style="text-decoration: none; color: black;"><h2>Pasatiempos</h2></a>
                 </section>
             </div>
         </div>

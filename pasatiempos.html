@@ -7,6 +7,65 @@
     <meta name="author" content="Felipe González">
     <meta name="viewport" content="interactive-widget=resizes-content, initial-scale=1.0">
     <title>Mis Pasatiempos</title>
+    <style>
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #00b4d8, #0096c7);
+            color: white;
+            text-align: center;
+        }
+        
+        header {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 40px 20px;
+            font-size: 40px;
+            font-weight: bold;
+            border-bottom: 5px solid #00b4d8;
+        }
+
+        
+        table {
+            width: 85%;
+            margin: 40px auto;
+            border-collapse: collapse;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        th, td {
+            padding: 20px;
+            text-align: center;
+        }
+        th {
+            background-color: #00b4d8;
+            font-size: 1.2rem;
+        }
+        td {
+            background-color: rgba(255, 255, 255, 0.1);
+            font-size: 1rem;
+        }
+
+        .image-column {
+            width: 150px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+        }
+
+        .image-column:hover {
+            transform: scale(1.1);
+        }
+        
+        caption {
+            font-size: 24px;
+            font-weight: bold;
+            color: #036f84;
+            margin: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -29,7 +88,7 @@
                 <td>Suelo ir a entrenar durante la semana para mejorar la salud y fuerza muscular.</td>
                 <td>3-4 veces a la semana</td>
                 <td>
-                    <img src="Gimnasio.jpeg" alt="Gimnasio" width="120">
+                    <img class="image-column" src="./Images/Gimnasio.jpeg" alt="Gimnasio" width="120">
                 </td>
             </tr>
             <tr>
@@ -37,7 +96,7 @@
                 <td>A más de hacer deporte, se pasa un rato agradable con mi papá y amigos.</td>
                 <td>1 veces a la semana</td>
                 <td>
-                    <img src="Squash.jpeg" alt="Squash" width="120">
+                    <img class="image-column" src="./Images/Squash.jpeg" alt="Squash" width="120">
                 </td>
             </tr>
             <tr>
@@ -45,7 +104,7 @@
                 <td>Más que un trabajo, es una oportunidad de mejorar, disfrutar de la música y convivir en familia.</td>
                 <td>2-3 veces por semana</td>
                 <td>
-                    <img src="Violín.jpg" alt="Tocando el violín" width="100">
+                    <img class="image-column" src="./Images/Violín.jpg" alt="Tocando el violín" width="100">
                 </td>
             </tr>
             <tr>
@@ -53,7 +112,7 @@
                 <td>Explorar las últimas innovaciones y avances científicos en los diversos campos de la ciencia y tecnología.</td>
                 <td>Diariamente</td>
                 <td>
-                    <a href="https://robotitus.com" target="_blank"><img src="robotitus.png" alt="Robotitus" width="200"></a>
+                    <a href="https://robotitus.com" target="_blank"><img src="./Images/robotitus.png" alt="Robotitus" width="200"></a>
                 </td>
             </tr>
         </tbody>
