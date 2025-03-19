@@ -19,6 +19,7 @@
         .container {
             display: flex;
             flex-direction: column;
+            justify-items: flex-start;
             align-items: center;
             padding: 20px;
         }
@@ -54,6 +55,7 @@
             margin-top: 0;
             font-size: 22.5px;
         }
+        
         .sidebar ul {
             list-style: none;
             padding: 0;
@@ -70,10 +72,20 @@
         }
         .main-content h2 {
             color: #2D2D2D;
-            border-bottom: 2px solid #4CAF50;
+            border-bottom: 2px solid #2321b0;
             padding-bottom: 10px;
             margin-bottom: 20px;
+
         }
+
+        :where(h3, i){
+            display: inline;
+        }
+
+        :where(h2, i){
+            display: inline-block;
+        }
+
         .main-content p {
             font-size: 17.5px;
             line-height: 1.6;
@@ -105,6 +117,19 @@
             text-align: center;
         }
 
+        section{
+            flex-wrap: wrap;
+        }
+
+        #especial{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            min-width: 150px;
+            flex-wrap: wrap;
+            border-radius: 10%;
+        }
+
     </style>
 </head>
 <body>
@@ -118,9 +143,10 @@
         <div class="content">
             <div class="sidebar">
                 <div class="imagcontent">
-                <img class="imagen" src="./Images/Foto_FJGM.jpg" alt="Foto de Perfil" width="100"></div>
+                    <img class="imagen" src="./Images/Foto_FJGM.jpg" alt="Foto de Perfil" width="100">
+                </div>
                 <br><br>
-                <i class="fa-solid fa-id-card"></i><h3>Información Personal</h3>
+                <i class="fa-solid fa-id-card"></i><h3> Información Personal</h3>
                 <ul>
                     <li><a href="mailto:fel_gzlmz@hotmail.com" target="_blank" style="text-decoration: none; color: gainsboro;">
                         <img src="./Images/post-30.png" alt="Correo Electrónico" width="15"> fel_glzmz@hotmail.com</a></li>
@@ -139,14 +165,14 @@
 
             <div class="main-content">
                 <section id="resumen">
-                    <i class="fa-solid fa-user-tie" style="text-shadow:2px 2px 4px #000000;"></i>
-                    <h2>Resumen Profesional</h2>
+                    <i class="fa-solid fa-user-tie" style="text-shadow:2px 2px 4px #000000; justify-content: first baseline;"></i>
+                    <h2>    Resumen Profesional</h2>
                     <p>Ingeniero Físico con experiencia en análisis de sistemas, desarrollo de software y gestión de proyectos. Especializado en metodologías ágiles (SCRUM, Kanban) y herramientas como React.js, Azure DevOps y Jira. Sólida capacidad en el diseño, documentación y validación de procesos y requerimientos, garantizando implementaciones exitosas de sistemas ERP. Experto en programación (Java, Python, C++) y enfocado en la mejora continua y la entrega de soluciones tecnológicas de alta calidad. Destacado por mi liderazgo en roles multifuncionales y en la dirección de equipos en entornos dinámicos. Además, con una destacada trayectoria como violinista profesional, demostrando versatilidad, compromiso y habilidad para equilibrar múltiples disciplinas.</p>
                 </section>
 
                 <section id="educacion">
                     <i class="fa-solid fa-graduation-cap" style="text-shadow:2px 2px 4px #000000;"></i>
-                    <h2>Educación</h2>
+                    <h2>     Educación</h2>
                     <ul>
                         <li><strong>Licenciatura en Ingeniería Física</strong> - UNIVERSIDAD IBEROAMERICANA    CIUDAD DE MÉXICO (2014-2019)</li>
                         <li><strong>Diplomado en Desarrollo Web</strong> - EInventiva Academy (2025)</li>
@@ -155,7 +181,7 @@
 
                 <section id="experiencia">
                     <i class="fa-solid fa-briefcase" style="text-shadow:2px 2px 4px #000000;"></i>
-                    <h2>Experiencia Laboral</h2>
+                    <h2>    Experiencia Laboral</h2>
                     <ul>
                         <li>
                             <strong>Analista de Sistemas</strong> - <em>BID Group - ANAM</em> (2024)
@@ -199,41 +225,43 @@
                         </li>
                     </ul>
                 </section>
+                
+                <div id="especial">
+                    <section id="habilidades">
+                        <i class="fa-solid fa-gears" style="text-shadow:2px 2px 4px #000000;"></i>
+                        <h2> Habilidades Técnicas</h2>
+                        <ul>
+                            <li>Desarrollo Frontend: HTML, React</li>
+                            <li>Control de versiones: Git, GitHub</li>
+                            <li>Metodologías ágiles: Scrum, Kanban</li>
+                            <li>DBMS: MySQL, Microsoft SQL Server</li>
+                        </ul>
+                        <i class="fa-solid fa-people-arrows" style="text-shadow:2px 2px 4px #000000;"></i>
+                        <h2> Habilidades Blandas</h2>
+                        <ul>
+                            <li>Adaptabildad</li>
+                            <li>Resolución de Problemas</li>
+                            <li>Trabajo en equipo</li>
+                            <li>Gestión de Tiempo</li>
+                            <li>Comunicación Efectiva</li>
+                            <li>Liderazgo</li>
+                        </ul>
+                    </section>
 
-                <section id="habilidades">
-                    <i class="fa-solid fa-gears" style="text-shadow:2px 2px 4px #000000;"></i>
-                    <h2>Habilidades Técnicas</h2>
-                    <ul>
-                        <li>Desarrollo Frontend: HTML, React</li>
-                        <li>Control de versiones: Git, GitHub</li>
-                        <li>Metodologías ágiles: Scrum, Kanban</li>
-                        <li>DBMS: MySQL, Microsoft SQL Server</li>
-                    </ul>
-                    <i class="fa-solid fa-people-arrows" style="text-shadow:2px 2px 4px #000000;"></i>
-                    <h2>Habilidades Blandas</h2>
-                    <ul>
-                        <li>Adaptabildad</li>
-                        <li>Resolución de Problemas</li>
-                        <li>Trabajo en equipo</li>
-                        <li>Gestión de Tiempo</li>
-                        <li>Comunicación Efectiva</li>
-                        <li>Liderazgo</li>
-                    </ul>
-                </section>
+                    <section id="premios-certificaciones">
+                        <i class="fa-solid fa-trophy" style="text-shadow:2px 2px 4px #000000;"></i>
+                        <h2> Premios y Certificaciones</h2>
+                        <ul>
+                            <li><strong>DEVOPS INTRODUCTION COURSE</strong> - Platzi (2023)</li>
+                            <li><strong>SQL TOTAL</strong> - Udemy (2025)</li>
+                        </ul>
+                    </section>
 
-                <section id="premios-certificaciones">
-                    <i class="fa-solid fa-file-certificate" style="text-shadow:2px 2px 4px #000000;"></i>
-                    <h2>Premios y Certificaciones</h2>
-                    <ul>
-                        <li><strong>DEVOPS INTRODUCTION COURSE</strong> - Platzi (2023)</li>
-                        <li><strong>SQL TOTAL</strong> - Udemy (2025)</li>
-                    </ul>
-                </section>
-
-                <section id="pasatiempos">
-                    <i class="fa-solid fa-dumbbell" style="text-shadow:2px 2px 4px #000000;"></i>
-                    <a href="pasatiempos.html" target="_blank" style="text-decoration: none; color: black;"><h2>Pasatiempos</h2></a>
-                </section>
+                    <section id="pasatiempos">
+                        <i class="fa-solid fa-dumbbell" style="text-shadow:2px 2px 4px #000000;"></i>
+                        <a href="pasatiempos.html" target="_blank" style="text-decoration: none; color: black;"><h2>    Pasatiempos</h2></a>
+                    </section>
+                </div>
             </div>
         </div>
 
