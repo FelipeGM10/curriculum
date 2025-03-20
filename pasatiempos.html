@@ -9,62 +9,85 @@
     <title>Mis Pasatiempos</title>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
-        
         body {
-            font-family: 'Arial', sans-serif;
+            /* font-family: 'Arial', sans-serif; */
             margin: 0;
             padding: 0;
-            background: linear-gradient(to right, #00b4d8, #0096c7);
-            color: white;
+            background: linear-gradient(to right, #1f262c, #002a7e);
+            color: rgba(255, 255, 255, 0.789);
             text-align: center;
         }
-        
         header {
             background-color: rgba(0, 0, 0, 0.5);
             padding: 40px 20px;
             font-size: 40px;
             font-weight: bold;
-            border-bottom: 5px solid #00b4d8;
+            border-bottom: 5px solid #e30046;;
         }
-
-        
-        table {
-            width: 85%;
-            margin: 40px auto;
-            border-collapse: collapse;
-            background-color: rgba(0, 0, 0, 0.7);
-            border-radius: 10px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        .pasatiempos {
+            display: flex;
+            justify-content: space-between;
+            max-width: 980px;
+            margin: auto;
+            flex-wrap: wrap;
         }
-        th, td {
-            padding: 20px;
-            text-align: center;
+        .actividad {
+            flex: 1;
+            background-color: #1f262c;
+            margin: 15px 8px;
+            padding: 30px;
+            border-radius: 6px;
+            color: rgba(255, 255, 255, 0.789);
+            
         }
-        th {
-            background-color: #00b4d8;
-            font-size: 1.2rem;
+        .actividad h2 {
+            margin-top: 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e30046;
+            text-transform: uppercase;
+            letter-spacing: 0.07em;
         }
-        td {
-            background-color: rgba(255, 255, 255, 0.1);
-            font-size: 1rem;
+        .actividad p {
+            margin-top: 0;
         }
-
+        .actividad p span {
+            font-size: 33px;
+        }
+        .actividad ul {
+            margin: 0 0 35px;
+            padding-left: 16px;
+            list-style: none;
+            line-height: 1.8;
+            color: #b5b5b5;
+        }
+        .actividad ul li{
+            text-align: right;
+        }
+        .actividad ul li::before {
+            content: "• ";
+            color: #e30046;
+            display: inline-block;
+            width: 20px;
+            margin-left: -15px;
+            position: relative;
+            top: 4px;
+            font-size: 26px;
+            line-height: 0;
+            
+        }
         .image-column {
-            width: 150px;
+            text-align: center;
             background-size: cover;
             background-position: center;
-            border-radius: 50%;
+            border-radius: 40%;
         }
-
         .image-column:hover {
             transform: scale(1.1);
         }
-        
-        caption {
-            font-size: 24px;
-            font-weight: bold;
-            color: #036f84;
-            margin: 20px;
+        @media (max-width: 768px) {
+            .pasatiempos {
+                display: block;
+            }
         }
     </style>
 </head>
@@ -73,51 +96,41 @@
         <h1>Mis Pasatiempos</h1>
     </header>
 
-    <table>
-        <caption>Lo que suelo hacer es...</caption>
-        <thead>
-            <tr>
-                <th>Mi Pasatiempo</th>
-                <th>¿Qué hago?</th>
-                <th>¿Cada cuándo?</th>
-                <th>Descripción gráfica</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Acudir al gimnasio</td>
-                <td>Suelo ir a entrenar durante la semana para mejorar la salud y fuerza muscular.</td>
-                <td>3-4 veces a la semana</td>
-                <td>
-                    <img class="image-column" src="./Images/Gimnasio.jpeg" alt="Gimnasio" width="120">
-                </td>
-            </tr>
-            <tr>
-                <td>Squash</td>
-                <td>A más de hacer deporte, se pasa un rato agradable con mi papá y amigos.</td>
-                <td>1 veces a la semana</td>
-                <td>
-                    <img class="image-column" src="./Images/Squash.jpeg" alt="Squash" width="120">
-                </td>
-            </tr>
-            <tr>
-                <td>Practicar Violín</td>
-                <td>Más que un trabajo, es una oportunidad de mejorar, disfrutar de la música y convivir en familia.</td>
-                <td>2-3 veces por semana</td>
-                <td>
-                    <img class="image-column" src="./Images/Violín.jpg" alt="Tocando el violín" width="100">
-                </td>
-            </tr>
-            <tr>
-                <td>Lectura de Nuevas Tecnologías y Ciencia     </td>
-                <td>Explorar las últimas innovaciones y avances científicos en los diversos campos de la ciencia y tecnología.</td>
-                <td>Diariamente</td>
-                <td>
-                    <a href="https://robotitus.com" target="_blank"><img src="./Images/robotitus.png" alt="Robotitus" width="200"></a>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="pasatiempos">
+    <div class="actividad">
+      <h2>Acudir al gimnasio</h2>
+      <p><span>3-4</span> veces a la semana</p>
+      <ul>
+        <li>Suelo ir a entrenar durante la semana para mejorar la salud y fuerza muscular.</li>
+      </ul>
+      <img class="image-column" src="./Images/Gimnasio.jpeg" alt="Gimnasio" width="120">
+    </div>
+    <div class="actividad">
+      <h2>Squash</h2>
+      <p><span>1</span> vez a la semana</p>
+      <ul>
+        <li>A más de hacer deporte, se pasa un rato agradable con mi papá y amigos.</li>
+      </ul>
+      <img class="image-column" src="./Images/Squash.jpeg" alt="Squash" width="120">
+    </div>      
+    <div class="actividad">
+      <h2>Practicar Violín</h2>
+      <p><span>2-3</span>veces por semana</p>
+      <ul>
+        <li>Más que un trabajo, es una oportunidad de mejorar, disfrutar de la música y convivir en familia.</li>
+      </ul>
+      <img class="image-column" src="./Images/Violín.jpg" alt="Tocando el violín" width="100">
+    </div>
+  
+    <div class="actividad">
+        <h2>Lectura de Ciencia y Nuevas Tecnologías</h2>
+        <p><span>Regularmente</span></p>
+        <ul>
+        <li>Explorar las últimas innovaciones y avances científicos en los diversos campos de la ciencia y tecnología.</li>
+        </ul>
+        <a href="https://robotitus.com" target="_blank"><img src="./Images/robotitus.png" alt="Robotitus" width="200"></a>
+    </div>      
+    </div>
     <br><br><br>
     <footer>
         <p>© 2025 Felipe J González M | Todos los derechos reservados</p>
