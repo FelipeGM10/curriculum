@@ -129,7 +129,18 @@
             flex-wrap: wrap;
             border-radius: 10%;
         }
-
+        @media (max-width: 768px) {
+            .container {
+                display: block;
+                padding: 5px;
+            }
+            .sidebar {
+                padding: 5px;
+            }
+            .content {
+                gap: 15px;
+            }
+        }
     </style>
 </head>
 <body>
